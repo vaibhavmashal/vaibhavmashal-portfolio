@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Sun, Moon,Code,Layout, GraduationCap,Mail} from 'lucide-react'
+import { Code,Layout, GraduationCap,Mail} from 'lucide-react'
+// import { Sun, Moon} from 'lucide-react'
 
 interface NavbarProps {
   darkMode: boolean
@@ -9,7 +10,7 @@ interface NavbarProps {
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
-export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
+export default function Navbar({  }: NavbarProps) {     // \* darkMode, setDarkMode*/ in that props
   const [isOpen, setIsOpen] = useState(false)
 
   return (
