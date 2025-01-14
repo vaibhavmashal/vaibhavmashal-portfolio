@@ -7,7 +7,7 @@ export default function Contact() {
         <section id='#contact' className="text-center py-20">
             <h1 className="text-3xl font-bold mb-2 p">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-                    Contact Me
+                    Contact Me Oaky
                 </span>
             </h1>
             <p className="max-w-2xl mx-auto mb-6 mt-5 font-bold">
