@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import {  Github, Linkedin, Mail, FileText } from 'lucide-react'
-import MyImage from '@/assets/vaibahavPass.jpeg'
+import MyImage from '@/assets/vaibhavProfile.jpeg'
 import Link from 'next/link'
 
 import 'tailwindcss/tailwind.css'
