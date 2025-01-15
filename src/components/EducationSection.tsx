@@ -19,18 +19,21 @@ export default function EducationSection() {
   return (
     <section id="education" className="py-20">
       <h2 className="text-3xl font-bold text-center mb-12">
-      <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
           Education
-          </span>
-        </h2>
-      <div className="space-y-8">
+        </span>
+      </h2>
+      <div className="space-y-8 max-w-4xl mx-auto">
         {educationData.map((edu, index) => (
-          <div key={index} className="bg-gray-100 border border-gray-500 dark:bg-gray-800  rounded-lg p-6 items-center">
+          <div 
+            key={index} 
+            className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition-transform duration-500 ease-in-out hover:scale-105"
+          >
             <div className="flex items-center mb-2">
-              <GraduationCap className="w-6 h-6 mr-2" />
+              <GraduationCap className="w-6 h-6 mr-2 text-emerald-500" />
               <h3 className="text-xl font-semibold">{edu.degree}</h3>
             </div>
-            <p className="text-lg mb-2">{edu.institution}</p>
+            <p className="text-gray-600 dark:text-gray-400 mb-2">{edu.institution}</p>
             <div className="flex items-center text-gray-600 dark:text-gray-400 mb-2">
               <MapPin className="w-4 h-4 mr-1" />
               <span>{edu.location}</span>

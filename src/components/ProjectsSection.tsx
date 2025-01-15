@@ -1,6 +1,8 @@
-import { ExternalLink,  Github } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const projects = [
+  // ...existing code...
   {
     title: 'SCORE-GO',
     description: 'SCORE-GO is a personalized cricket scoring website where users can signup, signin, create teams for local and global cricket tournament...',
@@ -30,6 +32,7 @@ const projects = [
     demoLink: '#',
     githubLink: "#",
   }
+
 ]
 
 export default function ProjectsSection() {
@@ -41,8 +44,14 @@ export default function ProjectsSection() {
         </span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => (
-          <div key={project.title} className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition duration-500 ease-in-out hover:scale-105">
+        {projects.map((project, index) => (
+          <motion.div 
+            key={project.title} 
+            className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition duration-500 ease-in-out hover:scale-105"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+          >
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -57,21 +66,20 @@ export default function ProjectsSection() {
             </div>
             <div className="flex justify-between items-center">
               {project.demoLink ? (
-                <a href={project.demoLink} className="btn btn-sm btn-icon transform transition duration-500 ease-in-out hover:scale-110" target="_blank" rel="noopener noreferrer">
+                <a href={project.demoLink} className="btn btn-sm btn-icon" target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={16} />
                   <span>View Project</span>
                 </a>
               ) : (
                 <span className="text-gray-500 dark:text-gray-400 text-sm">Not Available</span>
               )}
-              <a href={project.githubLink} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-110" target="_blank" rel="noopener noreferrer">
-                <Github size={20} className='text-emerald-500' />
+              <a href={project.githubLink} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100" target="_blank" rel="noopener noreferrer">
+                <Github size={20} className="text-emerald-500" />
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
   )
 }
-

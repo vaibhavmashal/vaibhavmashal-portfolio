@@ -1,0 +1,12 @@
+@keyframes expand {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.animate-expand {
+  animation: expand 0.5s ease-in-out forwards;
+}

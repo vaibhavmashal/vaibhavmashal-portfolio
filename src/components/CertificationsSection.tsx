@@ -66,10 +66,14 @@ const certifications = [
 export default function CertificationsSection() {
   return (
     <section id="certifications" className="py-20">
-      <h2 className="text-3xl font-bold text-center mb-12">Courses & Certifications</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+          Courses & Certifications
+        </span>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {certifications.map((cert, index) => (
-          <div key={index} className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6">
+          <div key={index} className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition duration-500 ease-in-out hover:scale-105">
             <div className="flex items-center mb-2">
               <Award className="w-6 h-6 mr-2" />
               <h3 className="text-xl font-semibold">{cert.title}</h3>
@@ -81,7 +85,7 @@ export default function CertificationsSection() {
             </div>
             <a
               href={cert.credentialLink}
-              className="btn btn-sm btn-icon"
+              className="btn btn-sm btn-icon transform transition duration-500 ease-in-out hover:scale-110"
               target="_blank"
               rel="noopener noreferrer"
             >

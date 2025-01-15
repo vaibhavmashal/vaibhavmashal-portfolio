@@ -34,7 +34,7 @@ export default function SkillsSection() {
       <h2 className="text-3xl  font-bold text-center mb-12"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Skills</span></h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillCategories.map((category) => (
-          <div key={category.title} className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6">
+          <div key={category.title} className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition duration-500 ease-in-out hover:scale-105">
             <div className="flex items-center mb-4">
               {category.icon}
               <h3 className="text-xl font-semibold ml-2">{category.title}</h3>
