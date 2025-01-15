@@ -8,7 +8,7 @@ interface NavbarProps {
   setDarkMode: (darkMode: boolean) => void
 }
 
-export default function Navbar({ darkMode, setDarkMode }: NavbarProps) { // added darkMode, setDarkMode to props
+export default function Navbar({  }: NavbarProps) { // added darkMode, setDarkMode to props
   const [isOpen, setIsOpen] = useState(false)
 
   return (
