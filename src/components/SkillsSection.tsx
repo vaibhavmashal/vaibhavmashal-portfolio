@@ -3,27 +3,27 @@ import { Code, Layout, Server, Database, GitBranch } from 'lucide-react'
 const skillCategories = [
   {
     title: 'Languages',
-    icon: <Code className="w-6 h-6" />,
+    icon: <Code className="w-6 h-6 text-emerald-500" />,
     skills: ['Java', 'Python', 'C++', 'C', 'JavaScript', 'TypeScript', 'PHP'],
   },
   {
     title: 'Frontend',
-    icon: <Layout className="w-6 h-6" />,
+    icon: <Layout className="w-6 h-6 text-emerald-500" />,
     skills: ['HTML', 'CSS', 'Tailwind CSS', 'Bootstrap', 'React.js', 'Next.js'],
   },
   {
     title: 'Backend',
-    icon: <Server className="w-6 h-6" />,
+    icon: <Server className="w-6 h-6 text-emerald-500" />,
     skills: ['Node.js', 'Express', 'REST APIs'],
   },
   {
-    title: 'Databases',
-    icon: <Database className="w-6 h-6" />,
+    title: 'Databases ',
+    icon: <Database className="w-6 h-6 text-emerald-500 " />,
     skills: ['MongoDB','Firebase', 'MySQL'],
   },
   {
     title: 'Version Control',
-    icon: <GitBranch className="w-6 h-6" />,
+    icon: <GitBranch className="w-6 h-6 text-emerald-500" />,
     skills: ['Git', 'GitHub'],
   },
 ]

@@ -5,15 +5,15 @@ const projects = [
     title: 'SCORE-GO',
     description: 'SCORE-GO is a personalized cricket scoring website where users can signup, signin, create teams for local and global cricket tournament...',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
-    demoLink: '#',
-    githubLink: '#',
+    demoLink: 'https://score-go.onrender.com/',
+    githubLink: 'https://github.com/SCORE-GO/SCORE-GO',
   },
   {
     title: 'Vaccine Management System',
     description: 'A vaccine management system that allows users to signup, signin, search for vaccines, book appointments, view appointments, cancel...',
     technologies: ['Java', 'Swing', 'MySQL', 'JDBC'],
     demoLink: null,
-    githubLink: '#',
+    githubLink: 'https://github.com/vaibhavmashal/vaccination-System',
   },
   {
     title: 'Photography Shop Billing System',
@@ -27,9 +27,16 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A simple portfolio website template built using React.js and Tailwind CSS. It is responsive and dark mode compatible...',
     technologies: ['React.js', 'Tailwind CSS',"next.js"],
-    demoLink: '#',
+    demoLink: 'https://vaibhavmashal-portfolio.vercel.app/',
     githubLink: "#",
-  }
+  },
+  {
+    title: 'Blood Bank Management System Based on Blockchain',
+    description: 'A blockchain-based blood bank management system that allows users to signup, signin, search for blood donors, request blood...',
+    technologies: ['python', 'Flask', 'Solidity', 'Metamask','web3.js'],
+    demoLink: null,
+    githubLink: "https://github.com/vaibhavmashal/blood-bank-management-system-revolutionized-by-blockchain",
+  },
 ]
 
 export default function ProjectsSection() {
@@ -62,10 +69,10 @@ export default function ProjectsSection() {
                   <span>View Project</span>
                 </a>
               ) : (
-                <span className="text-gray-500 dark:text-gray-400 text-sm">Not Available</span>
+                <span className=" dark:text-white text-sm">Not Available</span>
               )}
               <a href={project.githubLink} className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-110" target="_blank" rel="noopener noreferrer">
-                <Github size={20} className='text-emerald-500' />
+                <Github size={20} className='text-black ' />
               </a>
             </div>
           </div>

@@ -23,11 +23,11 @@ export default function EducationSection() {
           Education
         </span>
       </h2>
-      <div className="space-y-8 max-w-4xl mx-auto">
+      <div className="space-y-8 max-w-4xl mx-auto ">
         {educationData.map((edu, index) => (
           <div 
             key={index} 
-            className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition-transform duration-500 ease-in-out hover:scale-105"
+            className="bg-gray-100 border border-gray-500 border-l-4 border-l-emerald-500 dark:bg-gray-800 rounded-lg p-6 transform transition-transform duration-500 ease-in-out hover:scale-105"
           >
             <div className="flex items-center mb-2">
               <GraduationCap className="w-6 h-6 mr-2 text-emerald-500" />
