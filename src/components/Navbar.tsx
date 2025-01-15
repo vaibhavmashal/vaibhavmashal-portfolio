@@ -8,7 +8,7 @@ interface NavbarProps {
   setDarkMode: (darkMode: boolean) => void
 }
 
-export default function Navbar({  }: NavbarProps) {     // \* darkMode, setDarkMode*/ in that props
+export default function Navbar({ darkMode, setDarkMode }: NavbarProps) { // added darkMode, setDarkMode to props
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -34,7 +34,7 @@ export default function Navbar({  }: NavbarProps) {     // \* darkMode, setDarkM
           </button>
         </div>
       </div>
-      <div className={`md:hidden bg-white dark:bg-gray-900 shadow-md transition-transform duration-500 ease-in-out transform origin-top ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}>
+      <div className={`md:hidden bg-white dark:bg-gray-900 shadow-md transition-transform duration-500 ease-in-out transform origin-top ${isOpen ? 'scale-y-100' : 'scale-y-0'} ${isOpen ? 'block' : 'hidden'}`}>
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
           <Link href="#skills" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105">Skills</Link>
           <Link href="#projects" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105">Projects</Link>
