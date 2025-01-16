@@ -25,7 +25,7 @@ export default function Navbar({  }: NavbarProps) { // added darkMode, setDarkMo
         <Link href="#skills" className="hover:text-gray-600  dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105 "><Code className="w-6 h-6 text-emerald-500 hover:text-white" /></Link>
         <Link href="#projects" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105"><Layout className="w-6 h-6 text-emerald-500 hover:text-white" /></Link>
         <Link href="#education" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105"><GraduationCap className="w-6 h-6 text-emerald-500 hover:text-white" /></Link>
-        <Link href="#contact" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105"><Mail className="w-6 h-6 text-emerald-500" /></Link>
+        <Link href="#contact" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105"><Mail className="w-6 h-6 text-emerald-500  hover:text-white" /></Link>
         <Link href="#achievment" className="hover:text-gray-600 dark:hover:text-gray-300 transform transition duration-500 ease-in-out hover:scale-105"><Trophy className="w-6 h-6 mr-2 text-emerald-500 hover:text-white" /></Link>
         </div>
         <button
