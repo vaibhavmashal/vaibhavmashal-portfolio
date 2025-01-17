@@ -14,17 +14,17 @@ const skillCategories = [
   {
     title: 'Backend',
     icon: <Server className="w-6 h-6 text-emerald-500" />,
-    skills: ['Node.js', 'Express', 'REST APIs'],
+    skills: ['Node.js', 'Express', 'REST APIs',],
   },
   {
-    title: 'Databases ',
+    title: 'Databases',
     icon: <Database className="w-6 h-6 text-emerald-500 " />,
-    skills: ['MongoDB','Firebase', 'MySQL'],
+    skills: ['MongoDB','Firebase', 'MySQL','PostgreSQL'],
   },
   {
     title: 'Version Control',
     icon: <GitBranch className="w-6 h-6 text-emerald-500" />,
-    skills: ['Git', 'GitHub'],
+    skills: ['Git', 'GitHub',"Docker"],
   },
 ]
 

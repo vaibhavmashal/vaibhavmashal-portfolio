@@ -1,8 +1,9 @@
-import { ExternalLink,  Github } from 'lucide-react'
+import { ExternalLink,  Github,HeartPulse , Syringe, Camera,TrophyIcon,User} from 'lucide-react'
 
 const projects = [
   {
     title: 'SCORE-GO',
+    icon:<TrophyIcon size={24} className='  text-emerald-500' />,
     description: 'SCORE-GO is a personalized cricket scoring website where users can signup, signin, create teams for local and global cricket tournament...',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
     demoLink: 'https://score-go.onrender.com/',
@@ -10,6 +11,7 @@ const projects = [
   },
   {
     title: 'Vaccine Management System',
+    icon:<Syringe className='w-6 h-6 mt-1 text-emerald-500' />,  
     description: 'A vaccine management system that allows users to signup, signin, search for vaccines, book appointments, view appointments, cancel...',
     technologies: ['Java', 'Swing', 'MySQL', 'JDBC'],
     demoLink: null,
@@ -17,6 +19,7 @@ const projects = [
   },
   {
     title: 'Photography Shop Billing System',
+    icon:<Camera className='w-6 h-6 mt-1 text-emerald-500' />,
     description: 'A billing system for a photography shop that allows users to add customers, add products, generate bills, view bills, and generate...',
     technologies: ['Java', 'Swing', 'MySQL', 'JDBC'],
     demoLink: null,
@@ -25,13 +28,15 @@ const projects = [
 
   {
     title: 'Portfolio Website',
+    icon:<User className='w-6 h-6 mt-1 text-emerald-500' />,  
     description: 'A simple portfolio website template built using React.js and Tailwind CSS. It is responsive and dark mode compatible...',
     technologies: ['React.js', 'Tailwind CSS',"next.js"],
     demoLink: 'https://vaibhavmashal-portfolio.vercel.app/',
     githubLink: "#",
   },
   {
-    title: 'Blood Bank Management System Based on Blockchain',
+    title: `Blood Bank Management System Based on Blockchain`,
+    icon:<HeartPulse size={22} className='w-6 h-6 text-center mt-4 text-emerald-500' />,
     description: 'A blockchain-based blood bank management system that allows users to signup, signin, search for blood donors, request blood...',
     technologies: ['python', 'Flask', 'Solidity', 'Metamask','web3.js'],
     demoLink: null,
@@ -69,7 +74,10 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div key={project.title} className="bg-gray-100 border border-gray-500 dark:bg-gray-800 rounded-lg p-6 transform transition duration-500 ease-in-out hover:scale-105">
+            <div className='flex flex-row gap-3 items-centern'> 
+            <div className="mb-3">{project.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            </div>
             <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (

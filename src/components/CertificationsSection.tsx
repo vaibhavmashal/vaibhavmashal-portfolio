@@ -67,12 +67,6 @@ const certifications = [
     date: 'Dec 2024',
     credentialLink: 'https://www.linkedin.com/learning/certificates/b3db3b86e82bee82b146f7aee8061f7202d7a6bcf849d5d06ebdd769635bcdb5?trk=share_certificate',
   },
-  {
-    title:'Advance Design Patterns',
-    platform: 'LinekdIn Learning',
-    date: 'Dec 2024',
-    credentialLink: 'https://www.linkedin.com/learning/certificates/b3db3b86e82bee82b146f7aee8061f7202d7a6bcf849d5d06ebdd769635bcdb5?trk=share_certificate',
-  },
 ]
 
 export default function CertificationsSection() {
