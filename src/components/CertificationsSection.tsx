@@ -67,6 +67,12 @@ const certifications = [
     date: 'Dec 2024',
     credentialLink: 'https://www.linkedin.com/learning/certificates/b3db3b86e82bee82b146f7aee8061f7202d7a6bcf849d5d06ebdd769635bcdb5?trk=share_certificate',
   },
+  {
+    title:'PostgreSQL Essential Training',
+    platform: 'LinekdIn Learning',
+    date: 'Jan 2025',
+    credentialLink: 'https://www.linkedin.com/learning/certificates/43dcdcdd3d4d9aad8e874af3b0c13031675fd32be3a0a04f992bae75afac9734?trk=share_certificate',
+  },
 ]
 
 export default function CertificationsSection() {
