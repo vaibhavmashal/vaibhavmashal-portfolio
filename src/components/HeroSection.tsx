@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { Github, Linkedin, Mail, FileText } from 'lucide-react'
 import MyImage from '@/assets/vaibhavProfile.jpeg'
 import Link from 'next/link'
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa'
 
 import 'tailwindcss/tailwind.css'
 
@@ -30,23 +30,45 @@ export default function HeroSection() {
         React, Node.js, and cloud technologies, I build scalable and efficient web applications
         that make a difference.
       </p>
-      <div className="flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
-        <Link href="https://github.com/vaibhavmashal" className="btn btn-icon transform transition duration-500 ease-in-out hover:scale-105" target="_blank" rel="noopener noreferrer">
-          <Github size={20} />
-          <span>GitHub</span>
-        </Link>
-        <Link href="https://www.linkedin.com/in/vaibhav-mashal" className="btn btn-icon transform transition duration-500 ease-in-out hover:scale-105" target="_blank" rel="noopener noreferrer">
-          <Linkedin size={20} />
-          <span>LinkedIn</span>
-        </Link>
-        <Link href="mailto:vaibhavmashal098@gmail.com" className="btn btn-icon transform transition duration-500 ease-in-out hover:scale-105" target="_blank" rel="noopener noreferrer">
-          <Mail size={20} />
-          <span>Email</span>
-        </Link>
-        <Link href="#" className="btn btn-icon transform transition duration-500 ease-in-out hover:scale-105" target="_blank" rel="noopener noreferrer">
-          <FileText size={20} />
-          <span>Resume</span>
-        </Link>
+      <div className="flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0 border border-gray-500 rounded-lg sm:border-0 p-4">
+        <div className="grid grid-cols-2 gap-4 sm:flex sm:space-x-4">
+          <Link
+            href="https://github.com/vaibhavmashal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-icon w-full sm:w-auto group hover:bg-primary hover:text-primary-foreground transition-colors duration-300 flex items-center justify-center"
+          >
+            <FaGithub className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            GitHub
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/vaibhav-mashal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-icon w-full sm:w-auto group hover:bg-primary hover:text-primary-foreground transition-colors duration-300 flex items-center justify-center"
+          >
+            <FaLinkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            LinkedIn
+          </Link>
+          <Link
+            href="mailto:vaibhavmashal098@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-icon w-full sm:w-auto group hover:bg-primary hover:text-primary-foreground transition-colors duration-300 flex items-center justify-center"
+          >
+            <FaEnvelope className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            Email
+          </Link>
+          <Link
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-icon w-full sm:w-auto group hover:bg-primary hover:text-primary-foreground transition-colors duration-300 flex items-center justify-center"
+          >
+            <FaDownload className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            Resume
+          </Link>
+        </div>
       </div>
     </section>
   )
