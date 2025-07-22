@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import MyImage from '@/assets/vaibhav.jpeg'
+import MyImage from '@/assets/v1.jpeg'
 import Link from 'next/link'
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa'
 

@@ -48,15 +48,24 @@ export default function Chatbot() {
       })
 
       if (!response.ok) {
-        throw new Error('Failed to get response')
+        // Try to extract error message from response
+        let errorMsg = 'Failed to get response'
+        try {
+          const errData = await response.json()
+          if (errData?.error) errorMsg = errData.error
+        } catch {}
+        throw new Error(errorMsg)
       }
 
       const data = await response.json()
       const assistantMessage: Message = { role: 'assistant', content: data.response }
       setMessages((prev) => [...prev, assistantMessage])
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error in chat:', error)
-      setMessages((prev) => [...prev, { role: 'assistant', content: 'Sorry, I encountered an error. Please try again.' }])
+      setMessages((prev) => [
+        ...prev,
+        { role: 'assistant', content: `Sorry, I encountered an error. ${error?.message || ''}` }
+      ])
     } finally {
       setIsLoading(false)
     }

@@ -1,4 +1,4 @@
-import { ExternalLink,  Github,HeartPulse , Syringe, Camera,TrophyIcon,User} from 'lucide-react'
+import { ExternalLink,  Github , Syringe, Camera,TrophyIcon,User} from 'lucide-react'
 
 const projects = [
   {
@@ -35,12 +35,12 @@ const projects = [
     githubLink: "#",
   },
   {
-    title: `Blood Bank Management System Based on Blockchain`,
-    icon:<HeartPulse size={22} className='w-6 h-6 text-center mt-4 text-emerald-500' />,
-    description: 'A blockchain-based blood bank management system that allows users to signup, signin, search for blood donors, request blood...',
-    technologies: ['python', 'Flask', 'Solidity', 'Metamask','web3.js'],
-    demoLink: null,
-    githubLink: "https://github.com/vaibhavmashal/blood-bank-management-system-revolutionized-by-blockchain",
+    title: `Health Bites: AI-Driven Health & Nutrition Management`,
+    icon:<Syringe className='w-6 h-6 mt-1 text-emerald-500' />,  
+    description: 'AI wellness app using GenAI, Gemini Vision, React.js for meal/workout analysis and smart planning,   Integrated fitness, nutrition, coaching, and social features for improved results',
+    technologies: ['Gemini Vision', 'React.Js', 'GenAI', 'LLM','Tailwind CSS'],
+    demoLink: `https://`,
+    githubLink: "",
   },
 ]
 
