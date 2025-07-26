@@ -60,11 +60,12 @@ export default function Chatbot() {
       const data = await response.json()
       const assistantMessage: Message = { role: 'assistant', content: data.response }
       setMessages((prev) => [...prev, assistantMessage])
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Error in chat:', error)
+      const errorMessage = error instanceof Error ? error.message : ''
       setMessages((prev) => [
         ...prev,
-        { role: 'assistant', content: `Sorry, I encountered an error. ${error?.message || ''}` }
+        { role: 'assistant', content: `Sorry, I encountered an error. ${errorMessage}` }
       ])
     } finally {
       setIsLoading(false)
