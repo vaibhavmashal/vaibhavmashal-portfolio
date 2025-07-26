@@ -73,6 +73,12 @@ const certifications = [
     date: 'Jan 2025',
     credentialLink: 'https://www.linkedin.com/learning/certificates/43dcdcdd3d4d9aad8e874af3b0c13031675fd32be3a0a04f992bae75afac9734?trk=share_certificate',
   },
+  {
+    title:'Data Engineering Foundations',
+    platform: 'LinekdIn Learning',
+    date: 'Jan 2025',
+    credentialLink: 'https://www.linkedin.com/learning/certificates/b40b6d30fdf809019162ff67a89a4c8bae651e7ad2c7ad9cac31e6ad111b9569?trk=share_certificate%20#dataengineering.',
+  },
 ]
 
 export default function CertificationsSection() {
