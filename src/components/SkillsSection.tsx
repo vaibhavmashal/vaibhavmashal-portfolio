@@ -4,27 +4,32 @@ const skillCategories = [
   {
     title: 'Languages',
     icon: <Code className="w-6 h-6 text-emerald-500" />,
-    skills: ['Java', 'Python', 'C++', 'C', 'JavaScript', 'TypeScript', 'PHP'],
+    skills: ['Java', 'Python', 'C++', 'C', 'JavaScript', 'TypeScript'],
   },
   {
     title: 'Frontend',
     icon: <Layout className="w-6 h-6 text-emerald-500" />,
-    skills: ['HTML', 'CSS', 'Tailwind CSS', 'Bootstrap', 'React.js', 'Next.js'],
+    skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'React.js', 'Next.js'],
   },
   {
     title: 'Backend',
     icon: <Server className="w-6 h-6 text-emerald-500" />,
-    skills: ['Node.js', 'Express', 'REST APIs',],
+    skills: ['Node.js', 'Express', 'REST APIs','Django'],
   },
   {
     title: 'Databases',
     icon: <Database className="w-6 h-6 text-emerald-500 " />,
-    skills: ['MongoDB','Firebase', 'MySQL','PostgreSQL'],
+    skills: ['MongoDB', 'MySQL','PostgreSQL'],
   },
   {
     title: 'Version Control',
     icon: <GitBranch className="w-6 h-6 text-emerald-500" />,
     skills: ['Git', 'GitHub',"Docker"],
+  },
+  {
+    title: 'Tools',
+    icon: <GitBranch className="w-6 h-6 text-emerald-500" />,
+    skills: ['Postman', 'VS Code'],
   },
 ]
 

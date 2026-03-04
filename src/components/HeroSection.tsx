@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import MyImage from '@/assets/v1.jpeg'
 import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
-import 'tailwindcss/tailwind.css'
+// import 'tailwindcss/tailwind.css'
 
 export default function HeroSection() {
   return (
@@ -42,7 +42,7 @@ export default function HeroSection() {
             GitHub
           </Link>
           <Link
-            href="https://www.linkedin.com/in/vaibhav-mashal"
+            href="https://www.linkedin.com/in/vaibhavmashal/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF62ONdUCQ1ahNPRznmHswA%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-icon w-full sm:w-auto group hover:bg-primary hover:text-primary-foreground transition-colors duration-300 flex items-center justify-center"
@@ -59,15 +59,7 @@ export default function HeroSection() {
             <FaEnvelope className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
             Email
           </Link>
-          <Link
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-icon w-full sm:w-auto group hover:bg-primary hover:text-primary-foreground transition-colors duration-300 flex items-center justify-center"
-          >
-            <FaDownload className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-            Resume
-          </Link>
+        
         </div>
       </div>
     </section>

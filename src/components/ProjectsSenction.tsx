@@ -1,4 +1,4 @@
-import { ExternalLink,  Github , Syringe, Camera,TrophyIcon,User} from 'lucide-react'
+import { ExternalLink,  Github , Syringe ,TrophyIcon,User} from 'lucide-react'
 
 const projects = [
   {
@@ -18,15 +18,6 @@ const projects = [
     githubLink: 'https://github.com/vaibhavmashal/vaccination-System',
   },
   {
-    title: 'Photography Shop Billing System',
-    icon:<Camera className='w-6 h-6 mt-1 text-emerald-500' />,
-    description: 'A billing system for a photography shop that allows users to add customers, add products, generate bills, view bills, and generate...',
-    technologies: ['Java', 'Swing', 'MySQL', 'JDBC'],
-    demoLink: null,
-    githubLink: '#',
-  },
-
-  {
     title: 'Portfolio Website',
     icon:<User className='w-6 h-6 mt-1 text-emerald-500' />,  
     description: 'A simple portfolio website template built using React.js and Tailwind CSS. It is responsive and dark mode compatible...',
@@ -39,8 +30,8 @@ const projects = [
     icon:<Syringe className='w-6 h-6 mt-1 text-emerald-500' />,  
     description: 'AI wellness app using GenAI, Gemini Vision, React.js for meal/workout analysis and smart planning,   Integrated fitness, nutrition, coaching, and social features for improved results',
     technologies: ['Gemini Vision', 'React.Js', 'GenAI', 'LLM','Tailwind CSS'],
-    demoLink: `https://`,
-    githubLink: "",
+    demoLink: `https://health-bite.netlify.app/`,
+    githubLink: "https://github.com/vaibhavmashal/HealthBites",
   },
 ]
 

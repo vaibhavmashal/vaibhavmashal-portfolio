@@ -2,7 +2,7 @@ import { GraduationCap, MapPin, Calendar } from 'lucide-react'
 
 const educationData = [
   {
-    degree: 'Bachelor of Technology in Computer Engineering',
+    degree: 'Bachelor of Technology in Computer Science and Engineering',
     institution: 'Nagesh Karajagi Orchid College of Engineering & Technology, Solapur',
     location: 'Solapur, Maharashtra',
     period: '2023 - 2026',
