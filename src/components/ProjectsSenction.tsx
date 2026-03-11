@@ -26,7 +26,7 @@ const projects = [
     githubLink: "#",
   },
   {
-    title: 'Online Bookstore Web Application',
+    title: 'Online BookHub',
     icon: <BookOpen className='w-6 h-6 mt-1 text-emerald-500' />,
     description: 'Full-stack bookstore with React & Django REST Framework featuring authentication, role-based access, Stripe payments, search, filtering, cart management, and real-time updates.',
     technologies: ['ReactJS', 'Django', 'Django REST Framework', 'PostgreSQL', 'Stripe'],
