@@ -9,13 +9,13 @@ export default function Footer() {
             © {new Date().getFullYear()} Vaibhav Mashal. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-105">
+            <a href="https://github.com/vaibhavmashal" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-105">
               <Github size={20} />
             </a>
-            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-105">
+            <a href="https://www.linkedin.com/in/vaibhavmashal/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-105">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-105">
+            <a href="mailto:vaibhavmashal098@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transform transition duration-500 ease-in-out hover:scale-105">
               <Mail size={20} />
             </a>
           </div>

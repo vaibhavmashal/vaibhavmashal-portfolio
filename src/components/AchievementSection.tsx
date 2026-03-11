@@ -2,7 +2,7 @@ import { Trophy } from 'lucide-react'
 
 const achievements = [
   {
-    title: 'Web Devlopment Lead',
+    title: 'Web Development Lead',
     description: 'Web Development Lead at Google Developers Group, NKCOET.',
   },
   {

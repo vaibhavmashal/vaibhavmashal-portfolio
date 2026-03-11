@@ -1,36 +1,24 @@
-'use client'
-
-import { useState, useEffect } from 'react'
 import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 import './globals.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import Chatbot from '@/components/Chatbot'
+import ThemeWrapper from '@/components/ThemeWrapper'
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'Vaibhav Mashal | Software Engineer',
+  description: 'Portfolio of Vaibhav Mashal, a full-stack software engineer specializing in React, Node.js, and cloud technologies.',
+}
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const [darkMode, setDarkMode] = useState(true)
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [darkMode])
-
   return (
-    <html lang="en" className={`scroll-smooth ${darkMode ? 'dark' : ''}`}>
+    <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        {children}
-        <Footer />
-        <Chatbot/>
+        <ThemeWrapper>{children}</ThemeWrapper>
       </body>
     </html>
   )

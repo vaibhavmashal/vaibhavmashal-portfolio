@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Code, Layout, GraduationCap, Mail,Trophy } from 'lucide-react'
+import { Code, Layout, GraduationCap, Mail, Trophy, Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -9,7 +9,7 @@ interface NavbarProps {
   setDarkMode: (darkMode: boolean) => void
 }
 
-export default function Navbar({ }: NavbarProps) { // added darkMode, setDarkMode to props 
+export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null) // added state for hovered index
 
@@ -61,6 +61,13 @@ export default function Navbar({ }: NavbarProps) { // added darkMode, setDarkMod
             </div>
           ))}
         </div>
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transform transition duration-500 ease-in-out hover:scale-105"
+          aria-label="Toggle dark mode"
+        >
+          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+        </button>
         <button
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden p-2 rounded-full bg-gray-200 dark:bg-gray-700 transform transition duration-500 ease-in-out hover:scale-105"
