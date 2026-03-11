@@ -1,4 +1,4 @@
-import { ExternalLink,  Github , Syringe ,TrophyIcon,User} from 'lucide-react'
+import { ExternalLink,  Github , Syringe ,TrophyIcon,User, BookOpen} from 'lucide-react'
 
 const projects = [
   {
@@ -26,9 +26,17 @@ const projects = [
     githubLink: "#",
   },
   {
+    title: 'Online Bookstore Web Application',
+    icon: <BookOpen className='w-6 h-6 mt-1 text-emerald-500' />,
+    description: 'Full-stack bookstore with React & Django REST Framework featuring authentication, role-based access, Stripe payments, search, filtering, cart management, and real-time updates.',
+    technologies: ['ReactJS', 'Django', 'Django REST Framework', 'PostgreSQL', 'Stripe'],
+    demoLink: null,
+    githubLink: 'https://github.com/vaibhavmashal',
+  },
+  {
     title: `Health Bites: AI-Driven Health & Nutrition Management`,
     icon:<Syringe className='w-6 h-6 mt-1 text-emerald-500' />,  
-    description: 'AI wellness app using GenAI, Gemini Vision, React.js for meal/workout analysis and smart planning,   Integrated fitness, nutrition, coaching, and social features for improved results',
+    description: 'AI wellness app using GenAI, Gemini Vision, React.js for meal/workout analysis and smart planning,  Integrated fitness, nutrition, coaching, and social features for improved results',
     technologies: ['Gemini Vision', 'React.Js', 'GenAI', 'LLM','Tailwind CSS'],
     demoLink: `https://health-bite.netlify.app/`,
     githubLink: "https://github.com/vaibhavmashal/HealthBites",
