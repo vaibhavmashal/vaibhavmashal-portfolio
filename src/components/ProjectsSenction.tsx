@@ -1,4 +1,4 @@
-import { ExternalLink,  Github , Syringe ,TrophyIcon,User, BookOpen} from 'lucide-react'
+import { ExternalLink,  Github , Syringe ,TrophyIcon, BookOpen} from 'lucide-react'
 
 const projects = [
   {
@@ -16,14 +16,6 @@ const projects = [
     technologies: ['Java', 'Swing', 'MySQL', 'JDBC'],
     demoLink: null,
     githubLink: 'https://github.com/vaibhavmashal/vaccination-System',
-  },
-  {
-    title: 'Portfolio Website',
-    icon:<User className='w-6 h-6 mt-1 text-emerald-500' />,  
-    description: 'A simple portfolio website template built using React.js and Tailwind CSS. It is responsive and dark mode compatible...',
-    technologies: ['React.js', 'Tailwind CSS',"next.js"],
-    demoLink: 'https://vaibhavmashal-portfolio.vercel.app/',
-    githubLink: "#",
   },
   {
     title: 'Online BookHub',

@@ -1,10 +1,10 @@
-import { Code, Layout, Server, Database, GitBranch } from 'lucide-react'
+import { Code, Layout, Server, Database, GitBranch, Cloud } from 'lucide-react'
 
 const skillCategories = [
   {
     title: 'Languages',
     icon: <Code className="w-6 h-6 text-emerald-500" />,
-    skills: ['Java', 'Python', 'C++', 'C', 'JavaScript', 'TypeScript'],
+    skills: ['Java', 'Python', 'C++', 'JavaScript', 'TypeScript'],
   },
   {
     title: 'Frontend',
@@ -14,23 +14,25 @@ const skillCategories = [
   {
     title: 'Backend',
     icon: <Server className="w-6 h-6 text-emerald-500" />,
-    skills: ['Node.js', 'Express', 'REST APIs','Django'],
+    skills: ['Node.js', 'Express', 'REST APIs','Django','FastAPI','Django Channels'],
   },
   {
     title: 'Databases',
     icon: <Database className="w-6 h-6 text-emerald-500 " />,
-    skills: ['MongoDB', 'MySQL','PostgreSQL'],
+    skills: ['MongoDB', 'MySQL','PostgreSQL','Redis'],
   },
   {
     title: 'Version Control',
     icon: <GitBranch className="w-6 h-6 text-emerald-500" />,
-    skills: ['Git', 'GitHub',"Docker"],
+    skills: ['Git', 'GitHub','GitLab'],
   },
+
   {
-    title: 'Tools',
-    icon: <GitBranch className="w-6 h-6 text-emerald-500" />,
-    skills: ['Postman', 'VS Code'],
-  },
+    title: 'Cloud & DevOps',
+
+    icon: <Cloud className="w-6 h-6 text-emerald-500" />,
+    skills: ['Coolify','Docker', 'CI/CD'],
+  }
 ]
 
 export default function SkillsSection() {

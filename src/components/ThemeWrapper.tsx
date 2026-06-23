@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export default function ThemeWrapper({ children }: { children: React.ReactNode }) {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode] = useState(true)
 
   useEffect(() => {
     if (darkMode) {
@@ -17,7 +17,7 @@ export default function ThemeWrapper({ children }: { children: React.ReactNode }
 
   return (
     <>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Navbar />
       {children}
       <Footer />
     </>

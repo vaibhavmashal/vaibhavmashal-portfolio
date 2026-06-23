@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', description: '' });
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -24,7 +25,8 @@ export default function Contact() {
         }),
       });
       if (response.ok) {
-        alert('Email sent successfully');
+        setShowSuccessDialog(true);
+        setFormData({ name: '', email: '', description: '' });
       } else {
         alert('Error sending email');
       }
@@ -32,6 +34,10 @@ export default function Contact() {
     } catch (error) {
       alert('Error sending email');
     }
+  };
+
+  const handleCloseDialog = () => {
+    setShowSuccessDialog(false);
   };
 
   return (
@@ -82,6 +88,54 @@ export default function Contact() {
           Submit
         </button>
       </form>
+
+      {/* Success Dialog */}
+      {showSuccessDialog && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-gray-900 border border-emerald-600 rounded-lg shadow-lg p-8 max-w-md mx-auto animate-in fade-in duration-300">
+            {/* Success Icon */}
+            <div className="flex justify-center mb-4">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            {/* Success Message */}
+            <h2 className="text-2xl font-bold text-center mb-2 text-emerald-400">Success!</h2>
+            <p className="text-center text-gray-300 mb-6">
+              Thank you for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex gap-3 justify-center">
+              <button
+                onClick={handleCloseDialog}
+                className="px-6 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-md transition duration-200 font-medium"
+              >
+                Close
+              </button>
+              <button
+                onClick={handleCloseDialog}
+                className="px-6 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-md transition duration-200 font-medium"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
