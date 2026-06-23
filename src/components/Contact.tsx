@@ -115,7 +115,9 @@ export default function Contact() {
             {/* Success Message */}
             <h2 className="text-2xl font-bold text-center mb-2 text-emerald-400">Success!</h2>
             <p className="text-center text-gray-300 mb-6">
+
               Thank you for reaching out! Your message has been sent successfully. I&apos;ll get back to you as soon as possible.
+
             </p>
 
             {/* Buttons */}
