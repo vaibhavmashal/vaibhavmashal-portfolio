@@ -5,7 +5,7 @@ import EducationSection from '../components/EducationSection'
 import CertificationsSection from '../components/CertificationsSection'
 import AchievementSection from '../components/AchievementSection'
 import Contact from '../components/Contact'
-import Experience from '../components/Experience'
+// import Experience from '../components/Experience'
 
 export default function Home() {
   return (
